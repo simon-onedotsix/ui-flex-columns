@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $ui-font-size;
+  color: $ui-font-size;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 4rem;
+
+  background-color: rgb(255, 134, 40);
+
+  @include tablet-portrait-up {
+    background-color: #67c7dd;
+  }
+  @include tablet-landscape-up {
+    background-color: #67c7dd;
+  }
+  @include desktop-up {
+    background-color: #666;
+  }
+  @include desktop-hd-up {
+    background-color: #333;
+  }
+}
+
+h1 { margin-bottom: 3rem; }
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}

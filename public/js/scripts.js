@@ -1,0 +1,3 @@
+"use strict";document.write("main.js running");
+"use strict";document.write(" : secondary.js running");
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiLCJzZWNvbmRhcnkuanMiXSwibmFtZXMiOlsiZG9jdW1lbnQiLCJ3cml0ZSJdLCJtYXBwaW5ncyI6ImFBQUFBLFNBQVNDLE1BQU07YUNBZkQsU0FBU0MsTUFBTSIsImZpbGUiOiJzY3JpcHRzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZG9jdW1lbnQud3JpdGUoJ21haW4uanMgcnVubmluZycpO1xuIiwiZG9jdW1lbnQud3JpdGUoJyA6IHNlY29uZGFyeS5qcyBydW5uaW5nJyk7XG4iXX0=

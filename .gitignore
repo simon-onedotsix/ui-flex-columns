@@ -1,0 +1,15 @@
+node_modules
+
+# Mac specific
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+ehthumbs.db
+Thumbs.db
+
+# Codekit
+config.codekit3
+
+# Craft specific
+craft/storage/

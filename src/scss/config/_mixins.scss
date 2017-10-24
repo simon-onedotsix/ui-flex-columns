@@ -1,0 +1,33 @@
+// media queries
+
+@mixin mobile {
+  @media (max-width: 599px) { @content; }
+}
+@mixin tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin desktop-hd-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+
+// ui design
+
+@mixin fade ($params){
+  -webkit-transition: all $params;
+	-moz-transition: all $params;
+	-o-transition: all $params;
+	transition: all $params;
+}
+
+@mixin round-corners ($radius) {
+  -webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}

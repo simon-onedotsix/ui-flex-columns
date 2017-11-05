@@ -1,6 +1,7 @@
-@import "./config/reset";
 @import "./config/variables";
 @import "./config/mixins";
-@import "./config/globals";
 
-@import "./components/columns.scss"
+@import "./base/reset";
+@import "./base/globals";
+
+@import "./layout/flex-columns.scss"

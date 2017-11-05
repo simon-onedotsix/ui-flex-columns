@@ -1,0 +1,68 @@
+$columns-gutter-width:4rem;
+$columns-row-spacing:4rem;
+
+@mixin one-col {
+  img { max-width: 100%; margin-bottom: 1rem; }
+  margin-bottom: 2rem;
+}
+@mixin two-cols {
+  width: calc( (100% - #{$columns-gutter-width}) /2 );
+  margin-bottom: $columns-row-spacing;
+  &:nth-child(odd){ margin-right: $columns-gutter-width; }
+}
+@mixin three-cols {
+  width: calc( (100% - #{$columns-gutter-width *2}) /3 );
+  margin-right: $columns-gutter-width;
+  margin-bottom: $columns-row-spacing;
+  &:nth-child(3n+3) {margin-right: 0};
+}
+@mixin four-cols {
+  width: calc( (100% - #{$columns-gutter-width *3}) /4 );
+  margin-right: $columns-gutter-width;
+  margin-bottom: $columns-row-spacing;
+  &:nth-child(3n+3) {margin-right: $columns-gutter-width};
+  &:nth-child(4n+4) {margin-right: 0};
+}
+
+.flex-columns {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  &--4 {
+    div {
+      @include one-col;
+    }
+    @include tablet-portrait-up {
+      div { @include two-cols; }
+    }
+    @include tablet-landscape-up {
+      div { @include three-cols; }
+    }
+    @include desktop-up {
+      div { @include four-cols; }
+    }
+  }
+
+  &--3 {
+    div {
+      @include one-col;
+    }
+    @include tablet-portrait-up {
+      div { @include two-cols; }
+    }
+    @include tablet-landscape-up {
+      div { @include three-cols; }
+    }
+  }
+
+  &--2 {
+    div {
+      @include one-col;
+    }
+    @include tablet-portrait-up {
+      div { @include two-cols; }
+    }
+  }
+
+}
